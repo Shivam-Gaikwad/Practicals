@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+
+<input type="text" #name placeholder="Enter your name here" name="name">
+
+<input type="text" #Address placeholder="Enter your Address here" name="Address">
+
+<input type="text" #Contact placeholder="Enter your Contact here" name="Contact">
+
+<input type="email" #email placeholder="Enter your email here" name="email">
+
+
+<input type="password" #password placeholder="Enter password" name="password">
+
+<button (click)="submitForm(name.value, Address.value, Contact.value, email.value)">Submit</button>
+
+<h1>Your Registration Data</h1>
+
+<p>Name:{{displayname}}</p>
+<p>Address:{{displayAddress}}</p>
+<p>Contact:{{displayContact}}</p>
+<p>email:{{displayemail}}</p>
